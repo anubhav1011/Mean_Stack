@@ -4,7 +4,15 @@ var User =require('../models/user');
 
 
 router.get('/', function (req, res, next) {
-    res.render('node');
+
+    User.findOne({},function (err, doc) {
+
+        if(err){
+            return res.send('Error!');
+        }
+        res.render('node', {email: doc.email});
+    });
+
 });
 
 
