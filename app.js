@@ -7,7 +7,7 @@ var bodyParser = require('body-parser');
 
 var mongoose = require('mongoose')
 
-mongoose.connect('localhost:27017/node-angular');
+mongoose.connect('mongodb://localhost:27017/node-angular');
 
 var appRoutes = require('./routes/app');
 
