@@ -5,6 +5,10 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
+var mongoose = require('mongoose')
+
+mongoose.connect('localhost:27017/node-angular');
+
 var appRoutes = require('./routes/app');
 
 var app = express();
