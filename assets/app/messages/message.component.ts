@@ -5,7 +5,7 @@ import {Message} from "./message.model";
 @Component({
     selector: 'app-message',
     templateUrl: './message.component.html',
-    styles[`
+    styles:[`
 
         .author {
             display: inline-block;
